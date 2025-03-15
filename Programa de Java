@@ -1,0 +1,27 @@
+import java.util.Scanner; // Importamos Scanner para entrada de usuario
+
+public class VerificarEdad {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); // Crear un objeto Scanner
+
+        // Declarar variables
+        String nombre;
+        int edad;
+
+        // Pedir nombre y edad al usuario
+        System.out.print("Ingrese su nombre: ");
+        nombre = scanner.nextLine();
+
+        System.out.print("Ingrese su edad: ");
+        edad = scanner.nextInt();
+
+        // Estructura de control if-else
+        if (edad >= 18) {
+            System.out.println("Hola " + nombre + ", eres mayor de edad.");
+        } else {
+            System.out.println("Hola " + nombre + ", eres menor de edad.");
+        }
+
+        scanner.close(); // Cerrar el Scanner
+    }
+}
